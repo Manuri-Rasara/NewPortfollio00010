@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Knowladge } from "@/myComponents/Knowladge";
 import { Links } from "@/myComponents/Links";
 import Parallax from "@/myComponents/Parallex";
+import Connect from "@/myComponents/Connect";
 
 
 export default function Home() {
@@ -13,7 +14,9 @@ export default function Home() {
       <Work />
       <Knowladge/>
        <Parallax/>
-      <Links/>
+       <Connect/>
+
+  
     </div>
   );
 }

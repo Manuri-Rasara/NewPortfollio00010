@@ -1,9 +1,10 @@
 "use client"
 
 import type React from "react"
-
+import { Mail } from "lucide-react";
 import { useState } from "react"
 import { ArrowUpRight, Calendar } from "lucide-react"
+import SocialMediaLinks from "@/myComponents/SocialMediaLinks";
 
 export function LetsWorkTogether() {
   const [isHovered, setIsHovered] = useState(false)
@@ -21,8 +22,9 @@ export function LetsWorkTogether() {
   }
 
   const handleBookCall = () => {
-    window.open("https://cal.com/jatin-yadav05/15min", "_blank")
-  }
+    window.location.href =
+      "mailto:manurirasarahewage@gmail.com?subject=Book%20a%20Call&body=Hi,%20I%20would%20like%20to%20discuss%20a%20new idea.";
+  };
 
   return (
     <section className="flex min-h-screen items-center justify-center px-6">
@@ -48,14 +50,14 @@ export function LetsWorkTogether() {
               Perfect
             </span>
             <h3
-              className="text-3xl font-light tracking-tight text-foreground transition-all duration-500 sm:text-4xl"
+              className="text-4xl font-bold tracking-tight text-foreground transition-all duration-500 sm:text-5xl"
               style={{
                 transform: showSuccess ? "translateY(0)" : "translateY(10px)",
                 opacity: showSuccess ? 1 : 0,
                 transitionDelay: "200ms",
               }}
             >
-              Let's talk
+              Let's discuss
             </h3>
           </div>
 
@@ -93,7 +95,7 @@ export function LetsWorkTogether() {
                 boxShadow: isButtonHovered ? "0 0 30px rgba(0,0,0,0.1), 0 10px 40px rgba(0,0,0,0.08)" : "none",
               }}
             >
-              <Calendar
+              <Mail
                 className="size-4 transition-all duration-500 sm:size-5"
                 strokeWidth={1.5}
                 style={{
@@ -106,7 +108,7 @@ export function LetsWorkTogether() {
                   color: isButtonHovered ? "var(--background)" : "var(--foreground)",
                 }}
               >
-                Book a call
+                Send Email
               </span>
               <ArrowUpRight
                 className="size-4 transition-all duration-500 sm:size-5"
@@ -137,7 +139,7 @@ export function LetsWorkTogether() {
               transitionDelay: "450ms",
             }}
           >
-            15 min intro call
+            take 2 minutes
           </span>
         </div>
 
@@ -169,7 +171,7 @@ export function LetsWorkTogether() {
         >
           <div className="flex flex-col items-center gap-6">
             <h2
-              className="relative text-center text-5xl font-light tracking-tight text-foreground sm:text-6xl md:text-7xl lg:text-8xl transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
+              className="relative text-center text-5xl font-bold tracking-tight text-foreground sm:text-6xl md:text-7xl lg:text-8xl transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
               style={{
                 opacity: isClicked ? 0 : 1,
                 transform: isClicked ? "translateY(-40px) scale(0.95)" : "translateY(0) scale(1)",
@@ -252,10 +254,10 @@ export function LetsWorkTogether() {
             pointerEvents: isClicked ? "none" : "auto",
           }}
         >
-          <p className="max-w-md text-sm leading-relaxed text-muted-foreground">
-            Have a project in mind? I'd love to hear about it. Let's create something exceptional together.
-          </p>
-          <span className="text-xs tracking-widest uppercase text-muted-foreground/60">hello@example.com</span>
+          
+            <SocialMediaLinks/>
+   
+      
         </div>
       </div>
     </section>

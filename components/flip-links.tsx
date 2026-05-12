@@ -3,7 +3,7 @@ import React from "react";
 export const Component = () => {
   return (
   
-    <section className="grid place-content-start gap-2 bg-background w-full h-screen text-black mt-40 px-10 ">
+    <section className="grid place-content-start gap-2 bg-background w-full  text-black mt-40 px-10">
       <FlipLink href="https://x.com/thisis_vaib">Twitter</FlipLink>
       <FlipLink href="https://linkedin.com/in/vaib215">Linkedin</FlipLink>
       <FlipLink href="https://github.com/vaib215">Github</FlipLink>
