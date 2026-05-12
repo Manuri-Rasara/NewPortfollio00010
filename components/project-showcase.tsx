@@ -18,7 +18,7 @@ const projects: Project[] = [
     title: "MosqGuard",
     description: "Detect mosquito hotspots in real time. Act before it spreads.",
     year: "2024",
-    link: "#",
+    link: "/mosqguard",
     image: "/Assets/App-Mos.png",
   },
   {

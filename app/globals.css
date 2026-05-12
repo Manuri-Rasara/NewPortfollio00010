@@ -4,7 +4,6 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -49,6 +48,8 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+  --color-ds-gray-1000: var(----ds-gray-1000);
+  --color-ds-gray-900: var(----ds-gray-900);
 }
 
 :root {
@@ -85,6 +86,8 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --ds-gray-900: hsla(0, 0%, 40%, 1);
+  --ds-gray-1000: hsla(0, 0%, 9%, 1);
 }
 
 .dark {
@@ -119,6 +122,8 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  --ds-gray-900: hsla(0, 0%, 63%, 1);
+  --ds-gray-1000: hsla(0, 0%, 93%, 1);
 }
 
 @layer base {
