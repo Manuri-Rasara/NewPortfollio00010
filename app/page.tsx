@@ -5,6 +5,7 @@ import { Knowladge } from "@/myComponents/Knowladge";
 import { Links } from "@/myComponents/Links";
 import Parallax from "@/myComponents/Parallex";
 import Connect from "@/myComponents/Connect";
+import { ResumeDownload } from "@/myComponents/ResumeDownload";
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Knowladge/>
        <Parallax/>
        <Connect/>
+       <ResumeDownload/>
 
   
     </div>
