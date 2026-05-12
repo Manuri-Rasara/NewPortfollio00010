@@ -203,8 +203,8 @@ export function LetsWorkTogether() {
               <div
                 className="pointer-events-none absolute inset-0 rounded-full border transition-all ease-out"
                 style={{
-                  borderColor: isClicked ? "var(--foreground)" : isHovered ? "var(--foreground)" : "var(--border)",
-                  backgroundColor: isClicked ? "transparent" : isHovered ? "var(--foreground)" : "transparent",
+                  borderColor: isClicked ? "var(--foreground)" : isHovered ? "#1A3DE8" : "var(--border)",
+                  backgroundColor: isClicked ? "transparent" : isHovered ? "#1A3DE8" : "transparent",
                   transform: isClicked ? "scale(3)" : isHovered ? "scale(1.1)" : "scale(1)",
                   opacity: isClicked ? 0 : 1,
                   transitionDuration: isClicked ? "700ms" : "500ms",
