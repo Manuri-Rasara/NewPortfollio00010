@@ -3,7 +3,7 @@
 import LetterHoverEffect from "@/components/scale-letter";
 import React from "react";
 import { Pagination } from "@/components/ui/pagination";
-import Component from "@/components/bento-grid-01";
+
 
 const prev = {
   title: "Home",
@@ -18,7 +18,7 @@ const next = {
 export default function Mosqguard() {
   return (
     <>
-     <div className="mx-5 my-10">
+     <div className="mx-10 my-10">
         <Pagination next={next} previous={prev} />
     
         </div>
@@ -41,9 +41,9 @@ export default function Mosqguard() {
     </p>
   </div>
   </section>   
-        {/* <div className="mx-50 my-10">
-        <Component/>
-        </div> */}
+      
+ 
+        
   
     </>
   );
