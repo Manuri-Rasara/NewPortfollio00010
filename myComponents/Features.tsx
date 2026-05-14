@@ -124,7 +124,7 @@ const SecondaryFeatureCard = () => (
     />
     <div className="absolute inset-0 bg-gradient-to-t from-blue-500/30 via-transparent to-transparent dark:from-blue-900/40" />
     <p className="absolute bottom-6 left-6 z-10 max-w-[80%] text-xl font-bold text-white [text-shadow:_0_1px_4px_rgb(0_0_0_/_30%)]">
-      Small changes and big impact on the way!
+      Big impact on the way!
     </p>
   </Card>
 );
@@ -133,7 +133,7 @@ const JourneyCard = () => (
   <Card className="relative h-full w-full overflow-hidden p-6">
     <CardTitle className="text-lg">Workflow & Journey Design</CardTitle>
     <CardDescription>
-      Designed clear user workflows for smooth digital experience.
+     Smooth digital experience.
     </CardDescription>
     {/* Avatar constellation */}
     <div className="absolute -right-4 -bottom-4 h-48 w-48">
