@@ -94,7 +94,7 @@ const FeatureTagsCard = () => (
 const MainFeatureCard = () => (
   <Card className="relative h-full w-full overflow-hidden">
     <div className="absolute top-6 left-6 z-10 rounded-lg bg-background/50 p-2 backdrop-blur-sm">
-      <p className="text-xl font-bold tracking-tighter">Application.</p>
+      <p className="text-sm  font-bold tracking-tighter">Application.</p>
     </div>
     <img
       src="/Assets/App-Mos.png"
@@ -110,7 +110,7 @@ const StatCard = () => (
     <div>
       <p className="text-6xl font-bold text-lime-900 dark:text-lime-100">100%</p>
       <p className="text-sm text-lime-800 dark:text-lime-200">
-        Designed smart workflows and user journeys for clear digital experiences.
+        Designed clear digital experiences.
       </p>
     </div>
   </Card>
