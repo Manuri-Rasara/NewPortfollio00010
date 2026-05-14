@@ -3,6 +3,8 @@
 import LetterHoverEffect from "@/components/scale-letter";
 import React from "react";
 import { Pagination } from "@/components/ui/pagination";
+import Features from "../Features";
+
 
 
 const prev = {
@@ -26,7 +28,7 @@ export default function Mosqguard() {
         <LetterHoverEffect />
         </div>
         <section className="px-4 sm:px-6 lg:px-8 py-10">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-7xl mx-auto">
     <p className="text-base sm:text-lg lg:text-lg leading-relaxed text-gray-700">
 
             MosqGuard is a mobile application that helps users stay informed
@@ -40,10 +42,13 @@ export default function Mosqguard() {
             database.
     </p>
   </div>
-  </section>   
+  </section>
+  <div>
+
+  </div>
       
  
-        
+        <Features/>
   
     </>
   );
