@@ -31,7 +31,7 @@ const projects: Project[] = [
     title: "React Black Glass UI Portfolio",
     description: "Built with React and CSS, showcasing work in a clean glass UI",
     year: "2023",
-    link: "#",
+    link: "/portfolios",
     image: "/Assets/DEV-Thunder-Portfolio.png",
   },
   {
