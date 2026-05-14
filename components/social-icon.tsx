@@ -8,6 +8,7 @@ const ButtonSocialIconDemo = () => {
         variant="outline"
         type="button"
         className="rounded-lg hover:scale-120 transition-all duration-300 cursor-pointer"
+        onClick={() => window.open("https://www.instagram.com/itsmanuri/", "_blank")}
       >
         <img
           src="/Assets/SocialIcons/Insta.webp"
@@ -20,6 +21,7 @@ const ButtonSocialIconDemo = () => {
         variant="outline"
         type="button"
         className="rounded-lg hover:scale-120 transition-all duration-300 cursor-pointer"
+        onClick={() => window.open("https://github.com/Manuri-Rasara", "_blank")}
       >
         <img
           src="https://images.shadcnspace.com/assets/svgs/icon-github.svg"
@@ -37,6 +39,7 @@ const ButtonSocialIconDemo = () => {
         variant="outline"
         type="button"
         className="rounded-lg hover:scale-120 transition-all duration-300 cursor-pointer"
+        onClick={() => window.open("https://www.linkedin.com/in/manurihewage/", "_blank")}
       >
         <img
           src="https://images.shadcnspace.com/assets/svgs/icon-linkedin.svg"
@@ -49,6 +52,7 @@ const ButtonSocialIconDemo = () => {
         variant="outline"
         type="button"
         className="rounded-lg hover:scale-120 transition-all duration-300 cursor-pointer"
+        onClick={() => window.open("https://www.facebook.com/manuri.hewage.2025", "_blank")}
       >
         <img
           src="https://images.shadcnspace.com/assets/svgs/icon-facebook.svg"

@@ -35,7 +35,7 @@ const IntegrationsCard = () => (
     <CardHeader>
       <CardTitle className="text-lg">Features</CardTitle>
       <CardDescription>
-        Development + Design
+        UI Design
       </CardDescription>
     </CardHeader>
     <CardContent className="flex items-center justify-center gap-4">
@@ -43,10 +43,10 @@ const IntegrationsCard = () => (
       <img src="/Assets/Logos/figma-icon.svg" className="h-6 w-6 text-muted-foreground"/>
       </div>
       <div className="flex h-12 w-12 items-center justify-center rounded-full bg-muted">
-        <img src="/Assets/Logos/react-icon.svg" className="h-6 w-6 text-muted-foreground"/>
+        <Smartphone className="h-6 w-6 text-muted-foreground" />
       </div>
       <div className="flex h-12 w-12 items-center justify-center rounded-full bg-muted">
-        <img src="/Assets/Logos/CSS-SVG.svg" className="h-6 w-6 text-muted-foreground"/>
+        <PenTool className="h-6 w-6 text-muted-foreground" />
       </div>
     </CardContent>
   </Card>
@@ -57,34 +57,22 @@ const FeatureTagsCard = () => (
     <CardContent className="flex h-full flex-col justify-center gap-3 p-6">
   
 <a
-  href="https://manuri-rasara.github.io/portfolio/"
+  href="https://www.figma.com/proto/0wsQCpBHfyo2AhkDijzLpf/FastGrab?node-id=59-518&t=YGPhfthMStHTyN14-1"
   target="_blank"
   rel="noopener noreferrer"
 >
   <Button
     variant="outline"
-    className="w-full h-15 flex items-center gap-1.5 border-yellow-300 px-3 py-1.5 text-yellow-700 hover:bg-yellow-100 rounded-full cursor-pointer hover:text-yellow-700"
+    className="w-full h-30 flex items-center gap-1.5 border-purple-300 px-3 py-1.5 text-purple-700 hover:bg-purple-100 rounded-full cursor-pointer hover:text-purple-700"
   >
-    View Website
+    View Prototype
     <Plus className="h-3 w-3" />
   </Button>
 </a>
       
 
 
-   <a
-  href="https://github.com/Manuri-Rasara/portfolio"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <Button
-    variant="outline"
-   className="w-full h-15 flex items-center gap-1.5 border-yellow-300 px-3 py-1.5 text-yellow-700 hover:bg-yellow-100 rounded-full cursor-pointer hover:text-yellow-700"
-  >
-    View Github
-    <Plus className="h-3 w-3" />
-  </Button>
-</a>
+ 
 
 
     </CardContent>
@@ -94,10 +82,10 @@ const FeatureTagsCard = () => (
 const MainFeatureCard = () => (
   <Card className="relative h-full w-full overflow-hidden">
     <div className="absolute top-6 left-6 z-10 rounded-lg bg-background/50 p-2 backdrop-blur-sm">
-      <p className="text-sm  font-bold tracking-tighter">Website.</p>
+      <p className="text-sm  font-bold tracking-tighter">Application.</p>
     </div>
     <img
-      src="/Assets/DEV-Thunder-Portfolio.png"
+      src="/Assets/App-UI-Food-Delivery.png"
       alt="Smiling woman in a pink traditional dress"
       className="h-full w-full object-cover"
     />
@@ -105,12 +93,12 @@ const MainFeatureCard = () => (
 );
 
 const StatCard = () => (
-  <Card className="flex h-full flex-col justify-between bg-yellow-100/80 p-6 dark:bg-yellow-950/80">
-    <BadgeCheck className="h-8 w-8 text-black-700 dark:text-black-300" />
+  <Card className="flex h-full flex-col justify-between bg-purple-100/80 p-6 dark:bg-purple-950/80">
+    <BadgeCheck className="h-8 w-8 text-purple-700 dark:text-purple-300" />
     <div>
-      <p className="text-6xl font-bold text-black-100 dark:text-black-100">100%</p>
-      <p className="text-sm text-black dark:text-black-200">
-        By myself.
+      <p className="text-6xl font-bold text-purple-900 dark:text-purple-100">99.9%</p>
+      <p className="text-sm text-purple-800 dark:text-purple-200">
+        Pure interaction harmony.
       </p>
     </div>
   </Card>
@@ -119,21 +107,21 @@ const StatCard = () => (
 const SecondaryFeatureCard = () => (
   <Card className="relative h-full w-full overflow-hidden">
     <img
-      src="/Assets/Thunder-Back.webp"
+      src="/Assets/Food-back.webp"
       className="h-60 w-full object-cover"
     />
-    <div className="absolute inset-0 bg-gradient-to-t from-yellow-500/30 via-transparent to-transparent dark:from-yellow-900/40" />
+    <div className="absolute inset-0 bg-gradient-to-t from-purple-500/30 via-transparent to-transparent dark:from-blue-900/40" />
     <p className="absolute bottom-6 left-6 z-10 max-w-[80%] text-xl font-bold text-white [text-shadow:_0_1px_4px_rgb(0_0_0_/_30%)]">
-      First Try!
+      Fast Grab
     </p>
   </Card>
 );
 
 const JourneyCard = () => (
   <Card className="relative h-full w-full overflow-hidden p-6">
-    <CardTitle className="text-lg">Portfolio V 1.0</CardTitle>
+    <CardTitle className="text-lg">Food Delivery Experience</CardTitle>
     <CardDescription>
-     Where It Started!
+    Designed for speed and simplicity.
     </CardDescription>
     {/* Avatar constellation */}
     <div className="absolute -right-4 -bottom-4 h-48 w-48">
@@ -154,7 +142,7 @@ const JourneyCard = () => (
 );
 
 // --- The Default Demo ---
-export default function FeaturePortfolio() {
+export default function FeaturesFoodDeliveryApp() {
   return (
     <div className="w-full p-4 md:p-30">
       

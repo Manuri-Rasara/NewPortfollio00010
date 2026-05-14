@@ -4,6 +4,8 @@ import LetterHoverEffect from "@/components/scale-letter";
 import React from "react";
 import { Pagination } from "@/components/ui/pagination";
 import Features from "../Features";
+import FeaturesFoodDeliveryApp from "../FeaturesFoodDeliveryAoo";
+
 
 
 
@@ -14,7 +16,7 @@ const prev = {
 
 const next = {
   title: "Next Work",
-  href: "/foodDeliveryApp",
+  href: "/portfolios",
 };
 
 export default function Mosqguard() {
@@ -25,21 +27,15 @@ export default function Mosqguard() {
     
         </div>
         <div className="mx-5 my-10">
-        <LetterHoverEffect />
+        <LetterHoverEffect text="FOOD DELIVERY APP" />
         </div>
         <section className="px-4 sm:px-6 lg:px-8 py-10">
         <div className="max-w-7xl mx-auto">
     <p className="text-base sm:text-lg lg:text-lg leading-relaxed text-gray-700">
 
-            MosqGuard is a mobile application that helps users stay informed
-            about mosquito-borne disease risks through real-time alerts,
-            hotspot mapping, educational content, and user reports. I designed
-            the complete user interface for this app, focusing on a clean,
-            intuitive, and accessible user experience. Key features include
-            offline access, crowdsourced data integration, and a dedicated
-            education hub. The app was built using Flutter for the frontend,
-            Node.js with Express.js for the backend, and AWS RDS for the
-            database.
+            FastGrab is a modern food delivery app UI designed on Figma, featuring a dark theme 
+            complemented by deep purple tones. The dark background adds a sleek, premium feel, while the purple color
+            stimulates appetite and creativity,creating an engaging and stylish user experience.
     </p>
   </div>
   </section>
@@ -48,7 +44,7 @@ export default function Mosqguard() {
   </div>
       
  
-        <Features/>
+        <FeaturesFoodDeliveryApp/>
   
     </>
   );

@@ -25,7 +25,7 @@ const projects: Project[] = [
     title: "On-Demand Food Delivery UI",
     description: "A sleek mobile app design built for fast ordering, real-time tracking, and effortless user experience.",
     year: "2024",
-    link: "#",
+    link: "/foodDeliveryApp",
     image: "/Assets/App-UI-Food-Delivery.png",  },
   {
     title: "React Black Glass UI Portfolio",
@@ -35,8 +35,8 @@ const projects: Project[] = [
     image: "/Assets/DEV-Thunder-Portfolio.png",
   },
   {
-    title: "Brew & Brand Identity",
-    description: "A stylish café logo concept designed to reflect aroma, comfort, and a welcoming atmosphere.",
+    title: "Logos",
+    description: "A stylish logo concepts for various brands.",
     year: "2023",
     link: "/logosProjects",
     image: "/Assets/Logo-Toast.png",
