@@ -38,7 +38,7 @@ const projects: Project[] = [
     title: "Brew & Brand Identity",
     description: "A stylish café logo concept designed to reflect aroma, comfort, and a welcoming atmosphere.",
     year: "2023",
-    link: "#",
+    link: "/logosProjects",
     image: "/Assets/Logo-Toast.png",
   },
 ]

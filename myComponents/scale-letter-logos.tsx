@@ -1,12 +1,9 @@
 'use client'
 import React, { useState } from 'react';
 
-interface LetterHoverEffectProps {
-    text?: string;
-}
-
-export default function LetterHoverEffect({ text = "MOSQGUARD" }: LetterHoverEffectProps) {
+export default function LetterHoverLogos() {
     const [hoveredIndex, setHoveredIndex] = useState<number>(-1);
+    const text = "CYLON CRUMBS";
 
     const getThemeColors = () => {
         return {
