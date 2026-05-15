@@ -36,6 +36,16 @@ export default function Preloader({ onComplete }: PreloaderProps) {
 
   useEffect(() => {
     setDimension({ width: window.innerWidth, height: window.innerHeight })
+    
+    // Prevent scrolling while preloader is active
+    document.body.style.overflow = "hidden"
+    document.documentElement.style.overflow = "hidden"
+    
+    // Re-enable scrolling when preloader unmounts
+    return () => {
+      document.body.style.overflow = ""
+      document.documentElement.style.overflow = ""
+    }
   }, [])
 
   useEffect(() => {
@@ -79,7 +89,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
       variants={slideUp}
       initial="initial"
       animate={isExiting ? "exit" : "initial"}
-      className="fixed inset-0 w-screen h-full flex items-center justify-center bg-black z-[99999999999]"
+      className="fixed inset-0 w-screen h-screen flex items-center justify-center bg-black z-[99999999999]"
     >
       {dimension.width > 0 && (
         <>

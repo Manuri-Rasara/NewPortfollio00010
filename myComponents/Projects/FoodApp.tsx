@@ -27,7 +27,7 @@ export default function Mosqguard() {
     
         </div>
         <div className="mx-5 my-10">
-        <LetterHoverEffect text="FOOD DELIVERY APP" />
+        <LetterHoverEffect text="FASTGRAB" />
         </div>
         <section className="px-4 sm:px-6 lg:px-8 py-10">
         <div className="max-w-7xl mx-auto">
