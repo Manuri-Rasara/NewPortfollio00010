@@ -8,7 +8,7 @@ export default function AnimatedDownloadButton() {
 
   return (
     <a 
-      href="#Your Download Link" 
+      href="/Assets/CV/Manuri_Hewage_Resume.pdf" 
       download
       className="absolute center "
     >

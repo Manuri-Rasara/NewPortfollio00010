@@ -6,7 +6,7 @@ import { Pagination } from "@/components/ui/pagination";
 
 const prev = {
   title: "Home",
-  href: "/",
+ href: "/#work",
 };
 
 const next = {

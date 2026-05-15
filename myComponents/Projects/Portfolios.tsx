@@ -10,7 +10,7 @@ import FeaturePortfolio from "../FeaturePortfolio";
 
 const prev = {
   title: "Home",
-  href: "/",
+  href: "/#work",
 };
 
 const next = {

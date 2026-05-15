@@ -9,7 +9,7 @@ import Features from "../Features";
 
 const prev = {
   title: "Home",
-  href: "/",
+  href: "/#work",
 };
 
 const next = {

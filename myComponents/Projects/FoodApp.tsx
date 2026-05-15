@@ -11,7 +11,7 @@ import FeaturesFoodDeliveryApp from "../FeaturesFoodDeliveryAoo";
 
 const prev = {
   title: "Home",
-  href: "/",
+  href: "/#work",
 };
 
 const next = {
