@@ -35,7 +35,7 @@ const DemoOne = () => {
  return (
     <>
       {showPreloader && <Preloader onComplete={handleComplete} />}
-    <div>
+    <div className="overflow-hidden">
       <FlowArtDefaultDemo />
       <Work />
       <Knowladge/>
