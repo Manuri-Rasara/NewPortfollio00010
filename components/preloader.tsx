@@ -16,10 +16,10 @@ const opacity: Variants = {
 }
 const slideUp: Variants = {
   initial: {
-    top: 0,
+    y: 0,
   },
   exit: {
-    top: "-100dvh",
+    y: "-100%",
     transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.2 },
   },
 }
@@ -31,11 +31,13 @@ interface PreloaderProps {
 export default function Preloader({ onComplete }: PreloaderProps) {
  
   const [index, setIndex] = useState(0)
-  const [dimension, setDimension] = useState({ width: 0, height: 0 })
+  const [dimension, setDimension] = useState({ width: 0 })
   const [isExiting, setIsExiting] = useState(false)
 
   useEffect(() => {
-    setDimension({ width: window.innerWidth, height: window.innerHeight })
+    const handleResize = () => setDimension({ width: window.innerWidth })
+    handleResize()
+    window.addEventListener("resize", handleResize)
     
     // Prevent scrolling while preloader is active
     document.body.style.overflow = "hidden"
@@ -43,6 +45,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
     
     // Re-enable scrolling when preloader unmounts
     return () => {
+      window.removeEventListener("resize", handleResize)
       document.body.style.overflow = ""
       document.documentElement.style.overflow = ""
     }
@@ -69,8 +72,8 @@ export default function Preloader({ onComplete }: PreloaderProps) {
     )
   }, [index, onComplete])
 
-  const initialPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${dimension.height} Q${dimension.width / 2} ${dimension.height + 300} 0 ${dimension.height} L0 0`
-  const targetPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${dimension.height} Q${dimension.width / 2} ${dimension.height} 0 ${dimension.height} L0 0`
+  const initialPath = `M0 0 Q${dimension.width / 2} 300 ${dimension.width} 0 L0 0`
+  const targetPath = `M0 0 Q${dimension.width / 2} 0 ${dimension.width} 0 L0 0`
 
   const curve: Variants = {
     initial: {
@@ -85,11 +88,11 @@ export default function Preloader({ onComplete }: PreloaderProps) {
 
 
   return (
-      <motion.div
+    <motion.div
       variants={slideUp}
       initial="initial"
       animate={isExiting ? "exit" : "initial"}
-      className="fixed top-0 left-0 w-full h-[100dvh] flex items-center justify-center bg-[#070b13] z-[99999999999]"
+      className="fixed inset-0 flex items-center justify-center bg-[#070b13] z-[99999999999]"
     >
       {dimension.width > 0 && (
         <>
@@ -102,7 +105,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
             <span className="block w-2.5 h-2.5 bg-white rounded-full mr-2.5"></span>
             {words[index]}
           </motion.p>
-          <svg className="absolute top-0 w-full h-[calc(100%+300px)]">
+          <svg className="absolute top-[100%] left-0 w-full h-[300px]">
             <motion.path variants={curve} initial="initial" animate={isExiting ? "exit" : "initial"} fill="#070b13" />
           </svg>
         </>
