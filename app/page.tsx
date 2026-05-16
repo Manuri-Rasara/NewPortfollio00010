@@ -12,6 +12,9 @@ import { useState, useCallback, useEffect } from "react"
 import Preloader from "@/components/preloader"
 import CookieConsent from "react-cookie-consent"
 import WhatsAppIcon from "../public/Assets/Logos/WhatsAppIconLogo.png";
+import FloatingElementsDemo from "@/myComponents/FooterImageAnimated";
+import { RadialOrbitalTimelineDemo } from "@/myComponents/ParallexContentBlocks";
+
 
 const DemoOne = () => {
   const [showPreloader, setShowPreloader] = useState(true)
@@ -38,11 +41,21 @@ const DemoOne = () => {
       {showPreloader && <Preloader onComplete={handleComplete} />}
     <div className="overflow-hidden">
       <FlowArtDefaultDemo />
+      
       <Work />
       <Knowladge/>
        <Parallax/>
+       <RadialOrbitalTimelineDemo/>
        <Connect/>
        <ResumeDownload/>
+   
+
+
+
+  
+     
+
+  
 
       {!showPreloader && (
         <a
@@ -75,7 +88,7 @@ const DemoOne = () => {
         buttonWrapperClasses="cookie-consent-button-wrapper"
       >
         <div className="flex items-center justify-left rounded-2xl text-sm">
-        <p>🍪 This portfolio uses cookies for a smoother and more seamless experience.</p>
+        <p>🍪 This website uses cookies for a smoother and more seamless experience.</p>
       </div>
       
 

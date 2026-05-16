@@ -3,6 +3,8 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
 import { useRef } from "react";
+import { Demo } from "./ThunderBolt";
+import { RadialOrbitalTimelineDemo } from "./ParallexContentBlocks";
 
 export default function Parallax() {
   const container = useRef<HTMLDivElement>(null);
@@ -26,7 +28,7 @@ export default function Parallax() {
         {/* Text Content */}
         <div className="relative z-10 flex h-full w-full flex-col justify-between p-10 md:p-20 text-white mix-blend-difference">
           <p className="w-full md:w-[50vw] self-end text-lg md:text-[2vw] uppercase leading-relaxed">
-    
+   
           </p>
 
           <p
@@ -35,7 +37,11 @@ export default function Parallax() {
 >
   MANURI HEWAGE
 </p>
+
+
         </div>
+
+
 
         {/* Background Image */}
         <div className="fixed top-[-10vh] left-0 h-[120vh] w-full">
