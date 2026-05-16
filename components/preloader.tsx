@@ -19,7 +19,7 @@ const slideUp: Variants = {
     top: 0,
   },
   exit: {
-    top: "-100vh",
+    top: "-100dvh",
     transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.2 },
   },
 }
@@ -89,7 +89,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
       variants={slideUp}
       initial="initial"
       animate={isExiting ? "exit" : "initial"}
-      className="fixed inset-0 w-screen h-screen flex items-center justify-center bg-black z-[99999999999]"
+      className="fixed top-0 left-0 w-full h-[100dvh] flex items-center justify-center bg-[#070b13] z-[99999999999]"
     >
       {dimension.width > 0 && (
         <>
