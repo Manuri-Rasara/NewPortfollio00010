@@ -6,6 +6,7 @@ import { useRef } from "react";
 import { Demo } from "./ThunderBolt";
 import { RadialOrbitalTimelineDemo } from "./ParallexContentBlocks";
 import Marquee from "./ParallexInsideComponent";
+import MoreAboutMe from "./MoreAboutMe";
 
 export default function Parallax() {
   const container = useRef<HTMLDivElement>(null);
@@ -19,6 +20,7 @@ export default function Parallax() {
 
   return (
     <div className="mx-10 mt-30 mb-40 overflow-hidden rounded-4xl bg-white">
+      
       <div
         ref={container}
         className="relative flex h-[80vh] items-center justify-center overflow-hidden"
@@ -30,13 +32,20 @@ export default function Parallax() {
         <div className="relative z-10 flex h-full w-full flex-col justify-between p-10 md:p-20 text-white mix-blend-difference">
           <div className="w-full md:w-[45vw] self-end text-right">
             <Marquee />
+           
           </div>
 
           <p className="text-sm  md:text-[1.5vw] font-bold tracking-widest self-start">
-            MANURI HEWAGE
+            MANURI.
+
+          
+   <MoreAboutMe/>
+
+        
           </p>
 
 
+  
         </div>
 
 

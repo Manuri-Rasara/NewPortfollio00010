@@ -7,7 +7,7 @@ export default function Marquee() {
         prefix={<span className="text-2xl md:text-4xl font-semibold text-muted-foreground mr-2">Me/</span>}
         height={180}
         speed={0.9}
-        className="text-2xl md:text-4xl font-bold"
+        className="text-xl md:text-3xl font-bold"
       >
         <span>Weaving</span>
         <span>Transforming</span>
