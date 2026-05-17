@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import RadialOrbitalTimeline from "@/components/ui/radial-orbital-timeline";
 import { Demo } from "./ThunderBolt";
-import LayeredTextDemo from "./LayeredText";
+
 import Page from "./FAQ";
 
 const timelineData = [
