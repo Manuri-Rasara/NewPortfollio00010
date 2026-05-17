@@ -2,7 +2,7 @@ import { TextMarquee } from "@/components/ui/text-marquee"
 
 export default function Marquee() {
   return (
-    <div className="flex items-center justify-end w-full py-4">
+    <div className="flex items-center  justify-start md:justify-end w-full py-4">
       <TextMarquee
         prefix={<span className="text-2xl md:text-4xl font-semibold text-muted-foreground mr-2">Me/</span>}
         height={180}
