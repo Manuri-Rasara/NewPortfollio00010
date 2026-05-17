@@ -8,6 +8,9 @@ import {
   Rocket,
 } from "lucide-react";
 import RadialOrbitalTimeline from "@/components/ui/radial-orbital-timeline";
+import { Demo } from "./ThunderBolt";
+import LayeredTextDemo from "./LayeredText";
+import Page from "./FAQ";
 
 const timelineData = [
   {
@@ -73,5 +76,17 @@ const timelineData = [
 ];
 
 export function RadialOrbitalTimelineDemo() {
-  return <RadialOrbitalTimeline timelineData={timelineData} />;
+  return (
+  <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between w-full px-4 py-12 lg:px-12 gap-12 lg:gap-8 overflow-hidden">
+  {/* Left Side - Radial Orbital Timeline */}
+  <div className="w-full lg:w-[65%] flex justify-center lg:justify-start">
+    <RadialOrbitalTimeline timelineData={timelineData} />
+  </div>
+
+  
+  <div className="w-full lg:w-[30%] flex justify-center lg:justify-end">
+   <Page/>
+  </div>
+</div>
+  );
 }
