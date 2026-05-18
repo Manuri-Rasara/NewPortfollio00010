@@ -13,7 +13,7 @@ export const Component = () => {
             id: 1,
             title: "This is Me",
             description: "I’m Manuri, a creative developer and designer passionate about creating modern digital experiences.I love blending creativity with technology to design websites that are clean, interactive, and visually meaningful.",
-            imageUrl: '/Assets/AboutMeImg/Me.jpg',
+            imageUrl: '/Assets/AboutMeImg/Me2.webp',
             reverse: false
         },
         {
