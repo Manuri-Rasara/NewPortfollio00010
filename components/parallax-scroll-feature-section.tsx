@@ -20,7 +20,8 @@ export const Component = () => {
             id: 2,
             title: "Creative Vision",
             description: "Creativity inspires every project I build.From elegant UI designs to smooth user experiences, I focus on crafting digital products that feel modern, engaging, and unique.",
-   imageUrl: '/Assets/AboutMeImg/SecondMe.webp',            reverse: true
+   imageUrl: '/Assets/AboutMeImg/SecondMe.webp',            
+   reverse: true
         },
         {
             id: 3,
