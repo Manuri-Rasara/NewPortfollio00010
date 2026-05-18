@@ -50,6 +50,9 @@
   --radius-4xl: calc(var(--radius) * 2.6);
   --color-ds-gray-1000: var(----ds-gray-1000);
   --color-ds-gray-900: var(----ds-gray-900);
+  --color-color-black: var(----color-black);
+  --color-color-white: var(----color-white);
+  --font-open-sans: var(----font-open-sans);
 }
 
 :root {
@@ -88,6 +91,9 @@
   --sidebar-ring: oklch(0.708 0 0);
   --ds-gray-900: hsla(0, 0%, 40%, 1);
   --ds-gray-1000: hsla(0, 0%, 9%, 1);
+  --font-open-sans: "Open Sans", serif;
+  --color-white: hsla(0, 0%, 100%, 1);
+  --color-black: hsla(0, 0%, 0%, 1);
 }
 
 .dark {
