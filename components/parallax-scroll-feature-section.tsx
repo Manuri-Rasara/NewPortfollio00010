@@ -91,16 +91,12 @@ className={`h-screen flex flex-col md:flex-row items-center justify-center md:ga
                             className="size-100 object-cover rounded-2xl" 
                             alt={`Section ${section.id}` }
                         />
+                        
                     </motion.div>
                 </div>
             ))}
         </div>
-      <div>
-
-      </div>
-       <div className='min-h-screen w-screen flex flex-col items-center justify-center'>
-        <h1 className='text-8xl'>The End</h1>
-      </div>
+       
     </div>
   );
 };

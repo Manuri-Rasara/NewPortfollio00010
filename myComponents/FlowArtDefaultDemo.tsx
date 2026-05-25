@@ -1,10 +1,23 @@
 import FlowArt, { FlowSection } from '../components/story-scroll';
+import charechter from '../public/Assets/Charechter/FullWhiteMe.png';
+import charechter1 from '../public/Assets/Charechter/WhiteCharechterMe.png';
+import charechter3 from '../public/Assets/Charechter/BlackCharechterMe.png';
 
 export default function FlowArtDefaultDemo() {
   return (
     <FlowArt aria-label="Présentation Flow Art">
       <FlowSection aria-label="Qui nous sommes" style={{ backgroundColor: '#fd5200', color: '#fff' }}>
-        <p className="text-xs font-bold uppercase tracking-[0.2em]">01 — Who I am</p>
+       <div className="flex items-center justify-between">
+  <p className="text-xs font-bold uppercase tracking-[0.2em]">
+    01 — Who I am
+  </p>
+
+  <img
+    src={charechter.src}
+    alt="character"
+    className="w-10 h-10 sm:w-20 sm:h-20 md:w-28 md:h-24 object-contain"
+  />
+</div>
         <hr className="my-[2vw] border-none border-t border-black opacity-100" />
         <div>
           <h1
@@ -23,7 +36,17 @@ export default function FlowArtDefaultDemo() {
       </FlowSection>
 
       <FlowSection aria-label="La mission" style={{ backgroundColor: '#000', color: '#fff' }}>
-        <p className="text-xs font-bold uppercase tracking-[0.2em]">02 — The mission</p>
+               <div className="flex items-center justify-between">
+  <p className="text-xs font-bold uppercase tracking-[0.2em]">
+    02 — The mission
+  </p>
+
+  <img
+    src={charechter1.src}
+    alt="character"
+    className="w-10 h-10 sm:w-20 sm:h-20 md:w-28 md:h-24 object-contain"
+  />
+</div>
         <hr className="my-[2vw] border-none border-t border-white/60" />
         <div>
           <h2
@@ -87,7 +110,17 @@ export default function FlowArtDefaultDemo() {
       </FlowSection>
 
       <FlowSection aria-label="Présentation Flow Art" style={{ backgroundColor: '#F5F0E8', color: '#000' }}>
-        <p className="text-xs font-bold uppercase tracking-[0.2em]">03 —works</p>
+               <div className="flex items-center justify-between">
+  <p className="text-xs font-bold uppercase tracking-[0.2em]">
+   03 —works
+  </p>
+
+  <img
+    src={charechter3.src}
+    alt="character"
+    className="w-10 h-10 sm:w-20 sm:h-20 md:w-28 md:h-24 object-contain"
+  />
+</div>
         <hr className="my-[2vw] border-none border-t border-black/60" />
         <div>
           <h2
@@ -218,7 +251,18 @@ export default function FlowArtDefaultDemo() {
       </FlowSection> */}
 
       <FlowSection aria-label="Nous rejoindre" style={{ backgroundColor: '#1A3DE8', color: '#fff' }}>
-        <p className="text-xs font-bold uppercase tracking-[0.2em]">05 — Conatct Me</p>
+       
+              <div className="flex items-center justify-between">
+  <p className="text-xs font-bold uppercase tracking-[0.2em]">
+    05 — Conatct Me
+  </p>
+
+  <img
+    src={charechter.src}
+    alt="character"
+    className="w-10 h-10 sm:w-20 sm:h-20 md:w-28 md:h-24 object-contain"
+  />
+</div>
         <hr className="my-[2vw] border-none border-t border-black/60" />
         <div>
           <h2
