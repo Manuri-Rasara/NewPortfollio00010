@@ -58,7 +58,7 @@ export const Component = () => {
   return (
     <div>
       <div className='min-h-screen w-screen flex flex-col items-center justify-center'>
-        <h1 className='text-6xl font-black max-w-2xl text-center'>ABOUT MYSELF</h1>
+        <h1 className='text-6xl font-black max-w-2xl text-center text-orange-600'>ABOUT MYSELF</h1>
         <p className='mt-20 flex items-center gap-1.5 text-sm'>SCROLL <ArrowDown size={15} /></p>
       </div>
       {/* <ScrollSection /> */}

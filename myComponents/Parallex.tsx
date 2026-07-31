@@ -19,7 +19,7 @@ export default function Parallax() {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
 
   return (
-    <div className="mx-4  md:mx-10 mt-30 mb-40 overflow-hidden rounded-4xl bg-white">
+    <div id="parallax" className="mx-4  md:mx-10 mt-30 mb-40 overflow-hidden rounded-4xl bg-white">
       
       <div
         ref={container}
