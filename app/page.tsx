@@ -21,7 +21,7 @@ const DemoOne = () => {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      if (window.location.hash === '/' || sessionStorage.getItem("preloaderShown")) {
+      if (window.location.hash === '#FirstSection' || sessionStorage.getItem("preloaderShown")) {
         setShowPreloader(false);
       }
     }
@@ -39,7 +39,7 @@ const DemoOne = () => {
  return (
     <>
       {showPreloader && <Preloader onComplete={handleComplete} />}
-    <div className="overflow-hidden">
+    <div id="FirstSection" className="overflow-hidden">
       <FlowArtDefaultDemo />
       
       <Work />
