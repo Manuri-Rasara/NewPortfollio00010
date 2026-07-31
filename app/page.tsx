@@ -21,7 +21,7 @@ const DemoOne = () => {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      if (window.location.hash === '#work' || sessionStorage.getItem("preloaderShown")) {
+      if (window.location.hash === '/' || sessionStorage.getItem("preloaderShown")) {
         setShowPreloader(false);
       }
     }
