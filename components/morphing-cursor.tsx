@@ -133,7 +133,7 @@ export function MagneticText({
       )}
     >
       {/* Base text */}
-      <span className="text-8xl font-bold tracking-wide text-foreground ">
+      <span className="text-4xl md:text-8xl font-bold tracking-wide text-foreground ">
         {text}
       </span>
 
@@ -160,7 +160,7 @@ export function MagneticText({
             willChange: "transform",
           }}
         >
-          <span className="text-8xl font-bold tracking-wide text-background whitespace-nowrap">
+          <span className="text-4xl md:text-8xl font-bold tracking-wide text-background whitespace-nowrap">
             {hoverText}
           </span>
         </div>

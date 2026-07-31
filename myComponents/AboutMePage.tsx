@@ -38,10 +38,9 @@ export default function DemoOne() {
         ease: [0.32, 0.72, 0, 1],
       }}
     >
-      <div className="mx-10 my-10 mb-0 fixed top-10 left-10 z-50">
-              <Pagination  previous={prev} />
-          
-              </div>
+    <div className="hidden md:block mx-10 my-10 mb-0 fixed top-10 left-10 z-50">
+  <Pagination previous={prev} />
+</div>
       {/* <HomeIcon
         className="fixed top-30 left-30 w-16 h-16 p-4 rounded-xl bg-accent text-gray-500 cursor-pointer z-50 hover:bg-gray-100 transition-colors duration-200"
         onClick={handleBack}
