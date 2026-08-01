@@ -20,12 +20,21 @@ const DemoOne = () => {
   const [showPreloader, setShowPreloader] = useState(true)
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      if (window.location.hash === '#FirstSection' || sessionStorage.getItem("preloaderShown")) {
-        setShowPreloader(false);
-      }
+  if (typeof window !== "undefined") {
+    if (
+      window.location.hash === "#FirstSection" ||
+      sessionStorage.getItem("preloaderShown")
+    ) {
+      setShowPreloader(false);
+
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "instant", // or "auto"
+      });
     }
-  }, []);
+  }
+}, []);
 
   const handleComplete = useCallback(() => {
     sessionStorage.setItem("preloaderShown", "true");
