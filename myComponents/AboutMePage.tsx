@@ -12,12 +12,15 @@ export default function DemoOne() {
   const [leaving, setLeaving] = useState(false);
 
   const handleBack = () => {
-    setLeaving(true);
+  setLeaving(true);
 
-    setTimeout(() => {
-      window.history.back();
-    }, 280);
-  };
+  setTimeout(() => {
+    document.getElementById("parallax")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }, 280);
+};
 
   const prev = {
   title: "Back",
