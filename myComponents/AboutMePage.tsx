@@ -41,7 +41,7 @@ export default function DemoOne() {
         ease: [0.32, 0.72, 0, 1],
       }}
     >
-    <div className="hidden block mx-10 my-10 mb-0 fixed top-10  left-10 z-50">
+    <div className="hidden md:block mx-10 my-10 mb-0 fixed top-10  left-10 z-50">
   <Pagination previous={prev} />
 </div>
       {/* <HomeIcon
