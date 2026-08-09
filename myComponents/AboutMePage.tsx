@@ -6,6 +6,8 @@ import { HomeIcon } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Pagination } from "@/components/ui/pagination";
+import MyProjectCard from "./MyProjectCard";
+
 
 
 export default function DemoOne() {
@@ -51,6 +53,9 @@ export default function DemoOne() {
 
       <Component />
       <hr className="my-12 border border-muted" />
+      <div>
+  <MyProjectCard/>
+</div>
       <Magnetic />
     </motion.div>
   );

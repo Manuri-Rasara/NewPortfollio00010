@@ -19,7 +19,9 @@ import CookieConsent from "react-cookie-consent";
 
 import WhatsAppIcon from "../public/Assets/Logos/WhatsAppIconLogo.png";
 import Superman from "@/myComponents/Superman";
-import { Bolt, BoltIcon } from "lucide-react";
+import { ProjectShowcase } from "@/components/project-showcase";
+
+
 
 export default function DemoOne() {
   const [showPreloader, setShowPreloader] = useState(true);
@@ -95,6 +97,7 @@ export default function DemoOne() {
       
          <p className="text-2xl md:text-4xl "><span className="satisfy-regular text-4xl md:text-6xl text-orange-500">me.</span>Unstoppable.⚡</p>
       </div>
+
 
 
  <section id="parallax">
