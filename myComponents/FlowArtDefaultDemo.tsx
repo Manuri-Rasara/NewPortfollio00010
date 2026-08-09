@@ -8,15 +8,17 @@ export default function FlowArtDefaultDemo() {
     <FlowArt aria-label="Présentation Flow Art">
       <FlowSection aria-label="Qui nous sommes" style={{ backgroundColor: '#fd5200', color: '#fff' }}>
        <div className="flex items-center justify-between">
-  <p className="text-xs font-bold uppercase tracking-[0.2em]">
+ <p className="text-xs font-bold uppercase tracking-[0.2em]">
     01 — Who I am
   </p>
-
+  
   <img
     src={charechter.src}
     alt="character"
-    className="w-10 h-10 sm:w-20 sm:h-20 md:w-28 md:h-24 object-contain"
+     className="w-10 h-10 sm:w-20 sm:h-20 md:w-28 md:h-24 object-contain"
   />
+
+ 
 </div>
         <hr className="my-[2vw] border-none border-t border-black opacity-100" />
         <div>

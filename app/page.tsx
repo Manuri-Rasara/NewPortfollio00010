@@ -1,5 +1,7 @@
 "use client";
 
+
+
 import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 
@@ -16,6 +18,8 @@ import Preloader from "@/components/preloader";
 import CookieConsent from "react-cookie-consent";
 
 import WhatsAppIcon from "../public/Assets/Logos/WhatsAppIconLogo.png";
+import Superman from "@/myComponents/Superman";
+import { Bolt, BoltIcon } from "lucide-react";
 
 export default function DemoOne() {
   const [showPreloader, setShowPreloader] = useState(true);
@@ -79,14 +83,31 @@ export default function DemoOne() {
       <Work />
 
       <Knowladge />
+      
+     <div className=" h-15 mt-50 mb-10  align-baseline">
+      
+         <Superman/>
+       
+      </div>
+
+      <div className="flex justify-center">
+      
+      
+         <p className="text-2xl md:text-4xl "><span className="satisfy-regular text-4xl md:text-6xl text-orange-500">me.</span>Unstoppable.⚡</p>
+      </div>
+
+
  <section id="parallax">
   <Parallax />
 </section>
       <RadialOrbitalTimelineDemo />
 
       <Connect />
+ 
 
       <ResumeDownload />
+  
+   
 
       <a
         href="https://wa.me/94787531134?text=Hello%20Manuri%2C%20I%E2%80%99m%20interested%20in%20your%20design%20and%20development%20services.%20I%E2%80%99d%20love%20to%20connect%20and%20discuss%20a%20project."
