@@ -20,6 +20,7 @@ import CookieConsent from "react-cookie-consent";
 import WhatsAppIcon from "../public/Assets/Logos/WhatsAppIconLogo.png";
 import Superman from "@/myComponents/Superman";
 import { ProjectShowcase } from "@/components/project-showcase";
+import ProjectGrid from "@/myComponents/ProjectGrid";
 
 
 
@@ -55,23 +56,23 @@ export default function DemoOne() {
     }
   }, [showPreloader]);
 
- const handleComplete = useCallback(() => {
-  const alreadyShown = sessionStorage.getItem("preloaderShown");
+  const handleComplete = useCallback(() => {
+    const alreadyShown = sessionStorage.getItem("preloaderShown");
 
-  if (!alreadyShown) {
-    sessionStorage.setItem("preloaderShown", "true");
+    if (!alreadyShown) {
+      sessionStorage.setItem("preloaderShown", "true");
 
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "instant",
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "instant",
+      });
+    }
+
+    requestAnimationFrame(() => {
+      setShowPreloader(false);
     });
-  }
-
-  requestAnimationFrame(() => {
-    setShowPreloader(false);
-  });
-}, []);
+  }, []);
 
   // IMPORTANT: Don't render page until preloader finishes
   if (showPreloader) {
@@ -82,35 +83,37 @@ export default function DemoOne() {
     <div id="FirstSection" className="overflow-hidden">
       <FlowArtDefaultDemo />
 
-      <Work />
+      {/* <Work /> */}
+      <ProjectGrid />
 
       <Knowladge />
-      
-     <div className=" h-15 mt-50 mb-10  align-baseline">
-      
-         <Superman/>
-       
+
+
+      <div className=" h-15 mt-50 mb-10  align-baseline">
+
+        <Superman />
+
       </div>
 
       <div className="flex justify-center">
-      
-      
-         <p className="text-2xl md:text-4xl "><span className="satisfy-regular text-4xl md:text-6xl text-orange-500">me.</span>Unstoppable.⚡</p>
+
+
+        <p className="text-2xl md:text-4xl "><span className="satisfy-regular text-4xl md:text-6xl text-orange-500">me.</span>Unstoppable.⚡</p>
       </div>
 
 
 
- <section id="parallax">
-  <Parallax />
-</section>
+      <section id="parallax">
+        <Parallax />
+      </section>
       <RadialOrbitalTimelineDemo />
 
       <Connect />
- 
+
 
       <ResumeDownload />
-  
-   
+
+
 
       <a
         href="https://wa.me/94787531134?text=Hello%20Manuri%2C%20I%E2%80%99m%20interested%20in%20your%20design%20and%20development%20services.%20I%E2%80%99d%20love%20to%20connect%20and%20discuss%20a%20project."
