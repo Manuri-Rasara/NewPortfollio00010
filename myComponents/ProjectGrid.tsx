@@ -95,8 +95,8 @@ export default function ProjectGrid({
     }, [carouselApi]);
 
     return (
-        <section className="py-32 bg-background">
-            <div className="container mx-auto px-6">
+        <section className="py-32 bg-background w-full">
+            <div className="w-full max-w-[1700px] mx-auto px-6 sm:px-10 md:px-12 lg:px-16">
                 <div className="mb-8 flex flex-col justify-between md:mb-14 md:flex-row md:items-end lg:mb-16">
                     <div className="max-w-2xl">
                         <h3 className="text-lg sm:text-xl lg:text-3xl font-medium text-gray-900 dark:text-white leading-relaxed">
@@ -141,13 +141,13 @@ export default function ProjectGrid({
                             {items.map((item) => (
                                 <CarouselItem
                                     key={item.id}
-                                    className="pl-4 sm:pl-6 basis-[88%] sm:basis-[75%] md:basis-[560px] lg:basis-[640px] xl:basis-[720px] shrink-0 grow-0"
+                                    className="pl-4 sm:pl-6 basis-[90%] sm:basis-[80%] md:basis-[620px] lg:basis-[720px] xl:basis-[820px] 2xl:basis-[900px] shrink-0 grow-0"
                                 >
                                     <Link
                                         href={item.url}
-                                        className="group block relative w-full h-[420px] sm:h-[480px] md:h-[520px] lg:h-[580px]"
+                                        className="group block relative w-full h-[440px] sm:h-[500px] md:h-[540px] lg:h-[600px]"
                                     >
-                                        <Card className="overflow-hidden rounded-3xl h-full w-full border border-border/60 bg-card  transition-all duration-500 relative">
+                                        <Card className="overflow-hidden rounded-3xl h-full w-full border border-border/80 group-hover:border-foreground/60 dark:group-hover:border-white/70 group-hover:ring-1 group-hover:ring-foreground/20 dark:group-hover:ring-white/20 bg-card transition-all duration-500 relative group-hover:shadow-2xl">
                                             {/* Image */}
                                             <div className="relative h-full w-full transition-all duration-500 ease-in-out group-hover:h-1/2 overflow-hidden">
                                                 {/* <Image
@@ -172,7 +172,7 @@ export default function ProjectGrid({
                                                 ) : (
                                                     <Image
                                                         fill
-                                                        sizes="(max-width: 768px) 90vw, (max-width: 1200px) 640px, 720px"
+                                                        sizes="(max-width: 768px) 95vw, (max-width: 1200px) 720px, 900px"
                                                         src={item.image}
                                                         alt={item.title}
                                                         className="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
@@ -183,7 +183,7 @@ export default function ProjectGrid({
                                             </div>
 
                                             {/* Text Section */}
-                                            <div className="absolute bottom-0 left-0 w-full p-6 sm:p-8 lg:p-10 transition-all duration-500 ease-in-out group-hover:h-1/2 flex flex-col justify-center bg-background/95 dark:bg-card/95 backdrop-blur-md opacity-0 group-hover:opacity-100 border-t border-border/40">
+                                            <div className="absolute bottom-0 left-0 w-full p-6 sm:p-8 lg:p-10 transition-all duration-500 ease-in-out group-hover:h-1/2 flex flex-col justify-center bg-background/95 dark:bg-card/95 backdrop-blur-md opacity-0 group-hover:opacity-100 border-t border-border/60">
                                                 <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-foreground line-clamp-1 pr-14">
                                                     {item.title}
                                                 </h3>

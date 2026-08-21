@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect, useLayoutEffect, useCallback, forwardRef } from 'react';
-import { Sun, Moon, X, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
@@ -491,37 +491,8 @@ const portfolioData = [
 ];
 
 export default function Project() {
-  const [isDark, setIsDark] = useState(false);
-
-  useEffect(() => {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setIsDark(true);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (isDark) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [isDark]);
-
-  const toggleTheme = () => setIsDark(!isDark);
-
   return (
     <main className="min-h-screen bg-background text-foreground transition-colors duration-500 selection:bg-accent/30 selection:text-accent-foreground">
-      {/* <header className="sticky top-0 z-40 w-full bg-background/80 backdrop-blur-xl border-b border-border transition-colors duration-500">
-        <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-end">
-          <button 
-            onClick={toggleTheme}
-            className="w-10 h-10 flex items-center justify-center rounded-xl bg-muted/50 hover:bg-muted transition-colors border border-border"
-            aria-label="Toggle Theme"
-          >
-            {isDark ? <Sun className="w-5 h-5 text-yellow-500" /> : <Moon className="w-5 h-5 text-indigo-600" />}
-          </button>
-        </div>
-      </header> */}
 
       
 

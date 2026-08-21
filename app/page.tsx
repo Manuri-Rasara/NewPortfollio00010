@@ -85,6 +85,7 @@ export default function DemoOne() {
 
       {/* <Work /> */}
       <ProjectGrid />
+      <Work />
 
       <Knowladge />
 
