@@ -2,52 +2,52 @@ import FlowArt, { FlowSection } from '../components/story-scroll';
 import charechter from '../public/Assets/Charechter/FullWhiteMe.png';
 import charechter1 from '../public/Assets/Charechter/WhiteCharechterMe.png';
 import charechter3 from '../public/Assets/Charechter/BlackCharechterMe.png';
+import { SpringComponent } from './SpringComponent';
+import { MySpringComponent } from './MySpringComponent';
 
 export default function FlowArtDefaultDemo() {
   return (
     <FlowArt aria-label="Présentation Flow Art">
       <FlowSection aria-label="Qui nous sommes" style={{ backgroundColor: '#fd5200', color: '#fff' }}>
        <div className="flex items-center justify-between">
- <p className="text-xs font-bold uppercase tracking-[0.2em]">
-    01 — Who I am
+ <p className="text-xl font-bold uppercase tracking-[0.2em]">
+   ME
   </p>
   
-  <img
+  {/* <img
     src={charechter.src}
     alt="character"
      className="w-10 h-10 sm:w-20 sm:h-20 md:w-28 md:h-24 object-contain"
-  />
+  /> */}
 
  
 </div>
         <hr className="my-[2vw] border-none border-t border-black opacity-100" />
-        <div>
+        <div className="mb-0">
           <h1
-            className="text-[clamp(3.5rem,12vw,14rem)] font-bold leading-[0.85] uppercase tracking-tight"
+            className="text-[clamp(1.5rem,8vw,10rem)] font-bold leading-[1] "
           >
-            Dream
+     I DESIGN 
             <br />
-            Without
-            <br />
-            Limits
+
+           DIGITAL <br /><span className="text-black font-extrabold">EXPERIENCES</span>
           </h1>
         </div>
         <hr className="my-[2vw] border-none border-t border-black opacity-100" />
-        <p className="mt-auto max-w-[50ch] text-[clamp(1rem,2.5vw,2rem)] font-normal leading-relaxed">
-        I am a graphic designer, UI/UX designer, and developer.I craft simple, meaningful digital experiences where design and function work in harmony.        </p>
+        <p className="mt-auto max-w-[50ch] text-[clamp(1rem,2.5vw,2rem)] font-normal leading-relaxed">UI/UX Designer · Graphic Designer · Developer</p>
       </FlowSection>
 
       <FlowSection aria-label="La mission" style={{ backgroundColor: '#000', color: '#fff' }}>
                <div className="flex items-center justify-between">
-  <p className="text-xs font-bold uppercase tracking-[0.2em]">
+  {/* <p className="text-xs font-bold uppercase tracking-[0.2em]">
     02 — The mission
-  </p>
+  </p> */}
 
-  <img
+  {/* <img
     src={charechter1.src}
     alt="character"
     className="w-10 h-10 sm:w-20 sm:h-20 md:w-28 md:h-24 object-contain"
-  />
+  /> */}
 </div>
         <hr className="my-[2vw] border-none border-t border-white/60" />
         <div>

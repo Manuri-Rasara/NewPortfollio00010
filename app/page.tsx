@@ -21,6 +21,7 @@ import WhatsAppIcon from "../public/Assets/Logos/WhatsAppIconLogo.png";
 import Superman from "@/myComponents/Superman";
 import { ProjectShowcase } from "@/components/project-showcase";
 import ProjectGrid from "@/myComponents/ProjectGrid";
+import FloatingMenu from "@/myComponents/FloatingMenu";
 
 
 
@@ -82,7 +83,7 @@ export default function DemoOne() {
   return (
     <div id="FirstSection" className="overflow-hidden">
       <FlowArtDefaultDemo />
-
+      <FloatingMenu/>
       {/* <Work /> */}
       <ProjectGrid />
       <Work />
