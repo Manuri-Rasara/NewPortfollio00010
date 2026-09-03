@@ -39,79 +39,21 @@ export default function FlowArtDefaultDemo() {
       </FlowSection>
 
       <FlowSection aria-label="La mission" style={{ backgroundColor: '#000', color: '#fff' }}>
-        <div className="flex items-center justify-between mb-2">
-          <p className="text-xl font-bold uppercase tracking-[0.2em]">
-            WORK
-          </p>
+        <div className="flex flex-col gap-2 sm:gap-4 w-full h-full justify-start">
+          <div className="flex items-center justify-between">
+            <p className="text-xl font-bold uppercase tracking-[0.2em]">
+              WORK
+            </p>
 
-          {/* <img
-    src={charechter1.src}
-    alt="character"
-    className="w-10 h-10 sm:w-20 sm:h-20 md:w-28 md:h-24 object-contain"
-  /> */}
-        </div>
-        {/* <hr className="my-[2vw] border-none border-t border-white/60" />
-        <div>
-          <h2
-            className="text-[clamp(3.5rem,12vw,14rem)] font-bold leading-[0.85] uppercase tracking-tight"
-          >
-            Rewrite
-            <br />
-            Creative
-            <br />
-            Rules
-          </h2>
-        </div>
-        <hr className="my-[2vw] border-none border-t border-white/60" />
-        <p className="max-w-[50ch] text-[clamp(1rem,2.5vw,2rem)] font-normal leading-relaxed">
-        I rewrite them , with artists at the center of everything. I am someone who designs, thinks, and builds with purpose.
-        </p>
-        <hr className="my-[2vw] border-none border-t border-white/60" />
-        <div className="flex flex-wrap gap-[3vw]">
-          <div className="min-w-[180px] flex-1">
-            <p className="mb-2 text-sm font-bold uppercase tracking-wider">Design</p>
-            <p className="text-[clamp(0.85rem,1.3vw,1.05rem)] leading-relaxed opacity-75">
-            Thoughtful visual systems crafted with clarity and intention. Every pixel is designed to serve purpose and emotion.
-            </p>
+            {/* <img
+      src={charechter1.src}
+      alt="character"
+      className="w-10 h-10 sm:w-20 sm:h-20 md:w-28 md:h-24 object-contain"
+    /> */}
           </div>
-          <div className="min-w-[180px] flex-1">
-            <p className="mb-2 text-sm font-bold uppercase tracking-wider">Experience</p>
-            <p className="text-[clamp(0.85rem,1.3vw,1.05rem)] leading-relaxed opacity-75">
-            User-first interfaces shaped through UI/UX thinking,focusing on usability, flow, and meaningful interaction.
-            </p>
-          </div>
-          <div className="min-w-[180px] flex-1">
-            <p className="mb-2 text-sm font-bold uppercase tracking-wider">Development</p>
-            <p className="text-[clamp(0.85rem,1.3vw,1.05rem)] leading-relaxed opacity-75">
-            Clean, scalable, and performance-focused web development that brings ideas to life with modern technologies.
-            </p>
-          </div>
-        </div>
-        <hr className="my-[2vw] border-none border-t border-white/60" />
-        <div className="flex flex-wrap gap-[3vw]">
-          <div className="min-w-[180px] flex-1">
-            <p className="mb-2 text-sm font-bold uppercase tracking-wider">Projects</p>
-            <p className="text-[clamp(0.85rem,1.3vw,1.05rem)] leading-relaxed opacity-75">
-            Real-world digital products built from concept to execution — blending design thinking with technical precision.            </p>
-          </div>
-          <div className="min-w-[180px] flex-1">
-            <p className="mb-2 text-sm font-bold uppercase tracking-wider">Collaboration</p>
-            <p className="text-[clamp(0.85rem,1.3vw,1.05rem)] leading-relaxed opacity-75">
-            Working with teams, creators, and clients to turn ideas into functional, impactful digital experiences.
-            </p>
-          </div>
-          <div className="min-w-[180px] flex-1">
-            <p className="mb-2 text-sm font-bold uppercase tracking-wider">Growth</p>
-            <p className="text-[clamp(0.85rem,1.3vw,1.05rem)] leading-relaxed opacity-75">
-            Continuous learning and evolution through design, development, and exploration of new creative technologies.            </p>
-          </div>
-        </div>
-        <hr className="my-[2vw] border-none border-t border-white/60" />
-        <p className="mt-auto ml-auto max-w-[50ch] text-right text-[clamp(1rem,2.5vw,2rem)] font-normal leading-relaxed">
-        One question drives everything: Does this serve the user?
-        </p> */}
 
-        <ProjectMainGridUse />
+          <ProjectMainGridUse />
+        </div>
       </FlowSection>
 
       <FlowSection aria-label="Présentation Flow Art" style={{ backgroundColor: '#F5F0E8', color: '#000' }}>
