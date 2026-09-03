@@ -58,28 +58,25 @@ export default function FlowArtDefaultDemo() {
 
       <FlowSection aria-label="Présentation Flow Art" style={{ backgroundColor: '#F5F0E8', color: '#000' }}>
         <div className="flex items-center justify-between">
-          <p className="text-xs font-bold uppercase tracking-[0.2em]">
-            03 —works
+          <p className="text-xl font-bold uppercase tracking-[0.2em] text-[#fd5200]">
+            Leaves a Mark
           </p>
 
-          <img
+          {/* <img
             src={charechter3.src}
             alt="character"
             className="w-10 h-10 sm:w-20 sm:h-20 md:w-28 md:h-24 object-contain"
-          />
+          /> */}
         </div>
         <hr className="my-[2vw] border-none border-t border-black/60" />
         <div>
           <h2
-            className="text-[clamp(3.5rem,12vw,14rem)] font-bold leading-[0.85] uppercase tracking-tight"
-          >
-            Be
+            className="text-[clamp(1.5rem,8vw,10rem)] font-bold leading-[1] "          >
+            BE SEEN.
             <br />
-            Seen.
-            <br />
-            Be
-            <br />
-            Remembered.
+            BE REMEMBERED.
+
+
           </h2>
         </div>
         {/* <hr className="my-[2vw] border-none border-t border-black/60" />
