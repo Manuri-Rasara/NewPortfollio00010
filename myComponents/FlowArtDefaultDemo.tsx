@@ -4,33 +4,34 @@ import charechter1 from '../public/Assets/Charechter/WhiteCharechterMe.png';
 import charechter3 from '../public/Assets/Charechter/BlackCharechterMe.png';
 import { SpringComponent } from './SpringComponent';
 import { MySpringComponent } from './MySpringComponent';
+import ProjectMainGridUse from './ProjectMainGridUse';
 
 export default function FlowArtDefaultDemo() {
   return (
     <FlowArt aria-label="Présentation Flow Art">
       <FlowSection aria-label="Qui nous sommes" style={{ backgroundColor: '#fd5200', color: '#fff' }}>
-       <div className="flex items-center justify-between">
- <p className="text-xl font-bold uppercase tracking-[0.2em]">
-   ME
-  </p>
-  
-  {/* <img
+        <div className="flex items-center justify-between">
+          <p className="text-xl font-bold uppercase tracking-[0.2em]">
+            ME
+          </p>
+
+          {/* <img
     src={charechter.src}
     alt="character"
      className="w-10 h-10 sm:w-20 sm:h-20 md:w-28 md:h-24 object-contain"
   /> */}
 
- 
-</div>
+
+        </div>
         <hr className="my-[2vw] border-none border-t border-black opacity-100" />
         <div className="mb-0">
           <h1
             className="text-[clamp(1.5rem,8vw,10rem)] font-bold leading-[1] "
           >
-     I DESIGN 
+            I DESIGN
             <br />
 
-           DIGITAL <br /><span className="text-black font-extrabold">EXPERIENCES</span>
+            DIGITAL <br /><span className="text-black font-extrabold">EXPERIENCES</span>
           </h1>
         </div>
         <hr className="my-[2vw] border-none border-t border-black opacity-100" />
@@ -38,18 +39,18 @@ export default function FlowArtDefaultDemo() {
       </FlowSection>
 
       <FlowSection aria-label="La mission" style={{ backgroundColor: '#000', color: '#fff' }}>
-               <div className="flex items-center justify-between">
-  {/* <p className="text-xs font-bold uppercase tracking-[0.2em]">
-    02 — The mission
-  </p> */}
+        <div className="flex items-center justify-between mb-2">
+          <p className="text-xl font-bold uppercase tracking-[0.2em]">
+            WORK
+          </p>
 
-  {/* <img
+          {/* <img
     src={charechter1.src}
     alt="character"
     className="w-10 h-10 sm:w-20 sm:h-20 md:w-28 md:h-24 object-contain"
   /> */}
-</div>
-        <hr className="my-[2vw] border-none border-t border-white/60" />
+        </div>
+        {/* <hr className="my-[2vw] border-none border-t border-white/60" />
         <div>
           <h2
             className="text-[clamp(3.5rem,12vw,14rem)] font-bold leading-[0.85] uppercase tracking-tight"
@@ -108,21 +109,23 @@ export default function FlowArtDefaultDemo() {
         <hr className="my-[2vw] border-none border-t border-white/60" />
         <p className="mt-auto ml-auto max-w-[50ch] text-right text-[clamp(1rem,2.5vw,2rem)] font-normal leading-relaxed">
         One question drives everything: Does this serve the user?
-        </p>
+        </p> */}
+
+        <ProjectMainGridUse />
       </FlowSection>
 
       <FlowSection aria-label="Présentation Flow Art" style={{ backgroundColor: '#F5F0E8', color: '#000' }}>
-               <div className="flex items-center justify-between">
-  <p className="text-xs font-bold uppercase tracking-[0.2em]">
-   03 —works
-  </p>
+        <div className="flex items-center justify-between">
+          <p className="text-xs font-bold uppercase tracking-[0.2em]">
+            03 —works
+          </p>
 
-  <img
-    src={charechter3.src}
-    alt="character"
-    className="w-10 h-10 sm:w-20 sm:h-20 md:w-28 md:h-24 object-contain"
-  />
-</div>
+          <img
+            src={charechter3.src}
+            alt="character"
+            className="w-10 h-10 sm:w-20 sm:h-20 md:w-28 md:h-24 object-contain"
+          />
+        </div>
         <hr className="my-[2vw] border-none border-t border-black/60" />
         <div>
           <h2
@@ -176,7 +179,7 @@ export default function FlowArtDefaultDemo() {
               Find your people. Joint projects, split commissions, shared studios.
             </p>
           </div> */}
-          {/* <div className="min-w-[180px] flex-1">
+        {/* <div className="min-w-[180px] flex-1">
             <p className="mb-2 text-sm font-bold uppercase tracking-wider">06 — Evolve</p>
             <p className="text-[clamp(0.85rem,1.3vw,1.05rem)] leading-relaxed opacity-75">
               Your practice changes. Your platform should too. Flexible tools that adapt.
@@ -253,18 +256,18 @@ export default function FlowArtDefaultDemo() {
       </FlowSection> */}
 
       <FlowSection aria-label="Nous rejoindre" style={{ backgroundColor: '#1A3DE8', color: '#fff' }}>
-       
-              <div className="flex items-center justify-between">
-  <p className="text-xs font-bold uppercase tracking-[0.2em]">
-    05 — Conatct Me
-  </p>
 
-  <img
-    src={charechter.src}
-    alt="character"
-    className="w-10 h-10 sm:w-20 sm:h-20 md:w-28 md:h-24 object-contain"
-  />
-</div>
+        <div className="flex items-center justify-between">
+          <p className="text-xs font-bold uppercase tracking-[0.2em]">
+            05 — Conatct Me
+          </p>
+
+          <img
+            src={charechter.src}
+            alt="character"
+            className="w-10 h-10 sm:w-20 sm:h-20 md:w-28 md:h-24 object-contain"
+          />
+        </div>
         <hr className="my-[2vw] border-none border-t border-black/60" />
         <div>
           <h2
@@ -279,7 +282,7 @@ export default function FlowArtDefaultDemo() {
         </div>
         <hr className="my-[2vw] border-none border-t border-black/60" />
         <p className="mt-auto max-w-[50ch] text-[clamp(1rem,2.5vw,2rem)] font-normal leading-relaxed">
-        Let’s create work that stands out, feels right, and performs beautifully.
+          Let’s create work that stands out, feels right, and performs beautifully.
         </p>
       </FlowSection>
     </FlowArt>
