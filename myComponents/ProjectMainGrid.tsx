@@ -39,51 +39,49 @@ const projects: ProjectsTypes[] = [
 
 export default function ConditionGrid() {
     return (
-        <>
-            <div className="grid grid-cols-12  gap-4 overflow-hidden  lg:pb-5 pb-2">
+        <div className="w-full max-h-[72vh] sm:max-h-none overflow-y-auto sm:overflow-visible overscroll-contain pr-1 sm:pr-0">
+            <div className="grid grid-cols-12 gap-4 pb-8 sm:pb-2 lg:pb-5">
                 {projects.map((project, index) => {
-                    let colSpanClass = "sm:col-span-6 col-span-12 ";
+                    let colSpanClass = "sm:col-span-6 col-span-12";
                     if (index === 0) {
-                        colSpanClass = " sm:col-span-5 col-span-12 ";
+                        colSpanClass = "sm:col-span-5 col-span-12";
                     } else if (index === 1) {
-                        colSpanClass = "sm:col-span-7 col-span-12 ";
+                        colSpanClass = "sm:col-span-7 col-span-12";
                     } else if (index === projects.length - 2) {
-                        colSpanClass = "sm:col-span-7 col-span-12 ";
+                        colSpanClass = "sm:col-span-7 col-span-12";
                     } else if (index === projects.length - 1) {
-                        colSpanClass = "sm:col-span-5 col-span-12 ";
+                        colSpanClass = "sm:col-span-5 col-span-12";
                     }
                     return (
-                        <>
-                            <motion.article
-                                key={project.id ?? project.title}
-                                initial={{ y: 50, opacity: 0 }}
-                                whileInView={{ y: 0, opacity: 1 }}
-                                transition={{ ease: "easeOut" }}
-                                viewport={{ once: false }}
-                                className={` relative  ${colSpanClass} `}
-                            >
-                                <div className="w-auto h-full">
-                                    <Image
-                                        src={project?.img}
-                                        alt={"image"}
-                                        height={600}
-                                        width={1200}
-                                        className="h-full w-full object-cover rounded-xl"
-                                    />
+                        <motion.article
+                            key={project.id ?? project.title}
+                            initial={{ y: 30, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ ease: "easeOut", duration: 0.4 }}
+                            viewport={{ once: true }}
+                            className={`relative ${colSpanClass}`}
+                        >
+                            <div className="w-auto h-full">
+                                <Image
+                                    src={project?.img}
+                                    alt={project.title || "image"}
+                                    height={600}
+                                    width={1200}
+                                    className="h-full w-full object-cover rounded-xl"
+                                />
+                            </div>
+                            <div className="absolute lg:bottom-2 bottom-0 text-black w-full p-4 flex justify-between items-center">
+                                <h3 className="lg:text-xl text-sm bg-black text-white rounded-xl p-2 px-4">
+                                    {project.title}
+                                </h3>
+                                <div className="lg:w-12 w-10 lg:h-12 h-10 text-white grid place-content-center rounded-full bg-black">
+                                    <MoveUpRight />
                                 </div>
-                                <div className="absolute lg:bottom-2 bottom-0 text-black w-full p-4 flex justify-between items-center">
-                                    <h3 className="lg:text-xl text-sm bg-black text-white rounded-xl p-2 px-4">
-                                        {project.title}
-                                    </h3>
-                                    <div className="lg:w-12 w-10 lg:h-12 h-10 text-white grid place-content-center rounded-full bg-black">
-                                        <MoveUpRight />
-                                    </div>
-                                </div>
-                            </motion.article>
-                        </>
+                            </div>
+                        </motion.article>
                     );
                 })}
             </div>
-        </>
+        </div>
     );
 }
