@@ -32,10 +32,8 @@ const galleryItems = [
 
 const MasonryGridDemo = () => {
   return (
-    <div className="w-full min-h-screen p-4 sm:p-6 md:p-8">
-      <div className="max-w-7xl mx-auto">
-
-
+    <div className="w-full max-h-[70vh] sm:max-h-none overflow-y-auto sm:overflow-visible overscroll-contain touch-pan-y pr-1 sm:pr-0">
+      <div className="max-w-7xl mx-auto pb-10 sm:pb-0">
         <MasonryGrid
           items={galleryItems}
           // Responsive columns controlled by Tailwind classes
