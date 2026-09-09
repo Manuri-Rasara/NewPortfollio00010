@@ -96,7 +96,7 @@ export default function MasonryGrid<T>({
   staggerDelay = 0.05,
 }: MasonryGridProps<T>) {
   const containerRef = React.useRef<HTMLDivElement>(null);
-  const isInView = useInView(containerRef, { once: true, amount: 0.2 });
+  const isInView = useInView(containerRef, { once: true, amount: 0.1 });
 
   const containerVariants: Variants = {
     hidden: {},
