@@ -5,6 +5,71 @@ import charechter3 from '../public/Assets/Charechter/BlackCharechterMe.png';
 import { SpringComponent } from './SpringComponent';
 import { MySpringComponent } from './MySpringComponent';
 import ProjectMainGridUse from './ProjectMainGridUse';
+import LetterHoverLogos from './scale-letter-logos';
+import InteractiveBentoGallery from '@/components/interactive-bento-gallery';
+import MasonryGridDemo from './MasonryGridDemo';
+
+
+const mediaItems = [
+  {
+    id: 1,
+    type: "image",
+    title: "01",
+
+    url: "/Assets/LogoProject/Ceylon-01.png",
+    span: "md:col-span-1 md:row-span-3 sm:col-span-1 sm:row-span-2",
+  },
+  {
+    id: 2,
+    type: "image",
+    title: "02",
+
+    url: "/Assets/LogoProject/Ceylon-07.png",
+    span: "md:col-span-2 md:row-span-2 col-span-1 sm:col-span-2 sm:row-span-2",
+  },
+  {
+    id: 3,
+    type: "image",
+    title: "03",
+
+    url: "/Assets/LogoProject/Ceylon-03.png",
+    span: "md:col-span-1 md:row-span-3 sm:col-span-2 sm:row-span-2 ",
+  },
+  {
+    id: 4,
+    type: "image",
+    title: "04",
+
+    url: "/Assets/LogoProject/Ceylon-04.png",
+    span: "md:col-span-2 md:row-span-2 sm:col-span-1 sm:row-span-2 ",
+  },
+  {
+    id: 5,
+    type: "image",
+    title: "05",
+
+    url: "/Assets/LogoProject/Ceylon-05.png",
+    span: "md:col-span-1 md:row-span-3 sm:col-span-1 sm:row-span-2 ",
+  },
+  {
+    id: 6,
+    type: "image",
+    title: "06",
+
+    url: "/Assets/LogoProject/Ceylon-06.png",
+    span: "md:col-span-2 md:row-span-2 sm:col-span-1 sm:row-span-2 ",
+  },
+  {
+    id: 7,
+    type: "image",
+    title: "07",
+
+    url: "/Assets/LogoProject/Ceylon-02.png",
+    span: "md:col-span-1 md:row-span-3 sm:col-span-1 sm:row-span-2 ",
+  },
+]
+
+
 
 export default function FlowArtDefaultDemo() {
   return (
@@ -26,7 +91,7 @@ export default function FlowArtDefaultDemo() {
         <hr className="my-[2vw] border-none border-t border-black opacity-100" />
         <div className="mb-0">
           <h1
-            className="text-[clamp(1.5rem,8vw,10rem)] font-bold leading-[1] "
+            className="text-[clamp(2.5rem,8vw,10rem)] md:text-[clamp(1.5rem,8vw,10rem)] font-bold leading-[1] "
           >
             I DESIGN
             <br />
@@ -42,7 +107,7 @@ export default function FlowArtDefaultDemo() {
         <div className="flex flex-col gap-2 sm:gap-4 w-full h-full justify-start">
           <div className="flex items-center justify-between">
             <p className="text-xl font-bold uppercase tracking-[0.2em]">
-              WORK
+              DEV/UI WORK
             </p>
 
             {/* <img
@@ -55,6 +120,27 @@ export default function FlowArtDefaultDemo() {
           <ProjectMainGridUse />
         </div>
       </FlowSection>
+
+
+      <FlowSection aria-label="La mission" style={{ backgroundColor: '#000', color: '#fff' }}>
+        <div className="flex flex-col gap-2 sm:gap-4 w-full h-full justify-start">
+          <div className="flex items-center justify-between">
+            <p className="text-xl font-bold uppercase tracking-[0.2em]">
+              LOGO WORK
+            </p>
+
+            {/* <img
+      src={charechter1.src}
+      alt="character"
+      className="w-10 h-10 sm:w-20 sm:h-20 md:w-28 md:h-24 object-contain"
+    /> */}
+          </div>
+
+          <MasonryGridDemo />
+        </div>
+      </FlowSection>
+
+
 
       <FlowSection aria-label="Présentation Flow Art" style={{ backgroundColor: '#F5F0E8', color: '#000' }}>
         <div className="flex items-center justify-between">
@@ -71,10 +157,10 @@ export default function FlowArtDefaultDemo() {
         <hr className="my-[2vw] border-none border-t border-black/60" />
         <div>
           <h2
-            className="text-[clamp(1.5rem,8vw,10rem)] font-bold leading-[1] "          >
-            BE SEEN.
+            className="text-[clamp(2.5rem,8vw,10rem)] md:text-[clamp(1.5rem,8vw,10rem)] font-bold leading-[1] "          >
+            BE  <br />SEEN.
             <br />
-            BE REMEMBERED.
+            BE  <br />REMEMBERED.
 
 
           </h2>

@@ -6,7 +6,7 @@ import { Pagination } from "@/components/ui/pagination";
 
 const prev = {
   title: "Home",
- href: "/#work",
+  href: "/#work",
 };
 
 const next = {
@@ -20,23 +20,23 @@ const mediaItems = [
     id: 1,
     type: "image",
     title: "01",
-    
+
     url: "/Assets/LogoProject/Ceylon-01.png",
     span: "md:col-span-1 md:row-span-3 sm:col-span-1 sm:row-span-2",
   },
   {
     id: 2,
-    type:"image",
+    type: "image",
     title: "02",
-    
-      url: "/Assets/LogoProject/Ceylon-07.png",
+
+    url: "/Assets/LogoProject/Ceylon-07.png",
     span: "md:col-span-2 md:row-span-2 col-span-1 sm:col-span-2 sm:row-span-2",
   },
   {
     id: 3,
     type: "image",
     title: "03",
-    
+
     url: "/Assets/LogoProject/Ceylon-03.png",
     span: "md:col-span-1 md:row-span-3 sm:col-span-2 sm:row-span-2 ",
   },
@@ -44,7 +44,7 @@ const mediaItems = [
     id: 4,
     type: "image",
     title: "04",
-  
+
     url: "/Assets/LogoProject/Ceylon-04.png",
     span: "md:col-span-2 md:row-span-2 sm:col-span-1 sm:row-span-2 ",
   },
@@ -52,7 +52,7 @@ const mediaItems = [
     id: 5,
     type: "image",
     title: "05",
-    
+
     url: "/Assets/LogoProject/Ceylon-05.png",
     span: "md:col-span-1 md:row-span-3 sm:col-span-1 sm:row-span-2 ",
   },
@@ -60,7 +60,7 @@ const mediaItems = [
     id: 6,
     type: "image",
     title: "06",
-   
+
     url: "/Assets/LogoProject/Ceylon-06.png",
     span: "md:col-span-2 md:row-span-2 sm:col-span-1 sm:row-span-2 ",
   },
@@ -68,7 +68,7 @@ const mediaItems = [
     id: 7,
     type: "image",
     title: "07",
- 
+
     url: "/Assets/LogoProject/Ceylon-02.png",
     span: "md:col-span-1 md:row-span-3 sm:col-span-1 sm:row-span-2 ",
   },
@@ -128,39 +128,39 @@ const islandToastMediaItems = [
 
 export function LogosProject() {
   return (
-<div>
-       <div className="mx-10 my-10">
-            <Pagination next={next} previous={prev} />
-        
-            </div>
-<div className="mx-5 my-5">
-    <LetterHoverLogos/>
-</div>
     <div>
-            
-    {/* Bento Grid */}
-      <InteractiveBentoGallery
-        mediaItems={mediaItems}
-      />
+      <div className="mx-10 my-10">
+        <Pagination next={next} previous={prev} />
+
+      </div>
       <div className="mx-5 my-5">
-   <LetterHoverEffect text="ISLAND TOAST" />
-</div>
-      <div className="mt-10">
+        <LetterHoverLogos />
+      </div>
+      <div>
+
+        {/* Bento Grid */}
         <InteractiveBentoGallery
-          mediaItems={islandToastMediaItems}
+          mediaItems={mediaItems}
         />
+        <div className="mx-5 my-5">
+          <LetterHoverEffect text="ISLAND TOAST" />
+        </div>
+        <div className="mt-10">
+          <InteractiveBentoGallery
+            mediaItems={islandToastMediaItems}
+          />
+        </div>
+
+
       </div>
 
-       
-    </div>
+      <div>
 
-    <div>
-            
-  
-      
-    </div>
 
-    
+
+      </div>
+
+
     </div>
   )
 }
