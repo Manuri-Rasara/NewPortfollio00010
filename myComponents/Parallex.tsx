@@ -19,8 +19,8 @@ export default function Parallax() {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
 
   return (
-    <div className="mx-4  md:mx-10 mt-30 mb-40 overflow-hidden rounded-4xl bg-white">
-      
+    <div className="mx-4  md:mx-10 mt-20 mb-10 sm:mt-20 sm:mb-20 overflow-hidden rounded-4xl bg-white">
+
       <div
         ref={container}
         className="relative flex h-[80vh] items-center justify-center overflow-hidden"
@@ -32,20 +32,20 @@ export default function Parallax() {
         <div className="relative z-10 flex h-full w-full flex-col justify-between p-10 md:p-20 text-white mix-blend-difference">
           <div className="w-full md:w-[45vw] self-end text-right">
             <Marquee />
-           
+
           </div>
 
           <div className="text-sm  md:text-[1.5vw] font-bold tracking-widest self-start">
             MANURI.
 
-          
-   <MoreAboutMe/>
 
-        
+            <MoreAboutMe />
+
+
           </div>
 
 
-  
+
         </div>
 
 
