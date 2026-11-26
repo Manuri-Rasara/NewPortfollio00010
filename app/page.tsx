@@ -22,6 +22,7 @@ import Superman from "@/myComponents/Superman";
 import { ProjectShowcase } from "@/components/project-showcase";
 import ProjectGrid from "@/myComponents/ProjectGrid";
 import FloatingMenu from "@/myComponents/FloatingMenu";
+import MyGallery from "@/myComponents/MyGallery";
 
 
 
@@ -83,11 +84,12 @@ export default function DemoOne() {
   return (
     <div id="FirstSection" className="overflow-hidden">
       <FlowArtDefaultDemo />
-      <FloatingMenu/>
+      {/* <FloatingMenu /> */}
       {/* <Work /> */}
-      <ProjectGrid />
-      <Work />
+      {/* <ProjectGrid /> */}
 
+      <MyGallery />
+      <Work />
       <Knowladge />
 
 

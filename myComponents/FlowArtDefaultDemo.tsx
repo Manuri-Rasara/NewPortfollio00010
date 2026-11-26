@@ -74,20 +74,20 @@ const mediaItems = [
 export default function FlowArtDefaultDemo() {
   return (
     <FlowArt aria-label="Présentation Flow Art">
-      <FlowSection aria-label="Qui nous sommes" style={{ backgroundColor: '#fd5200', color: '#fff' }}>
+      {/* <FlowSection aria-label="Qui nous sommes" style={{ backgroundColor: '#fd5200', color: '#fff' }}>
         <div className="flex items-center justify-between">
           <p className="text-xl font-bold uppercase tracking-[0.2em]">
             ME
-          </p>
+          </p> */}
 
-          {/* <img
+      {/* <img
     src={charechter.src}
     alt="character"
      className="w-10 h-10 sm:w-20 sm:h-20 md:w-28 md:h-24 object-contain"
   /> */}
 
 
-        </div>
+      {/* </div>
         <hr className="my-[2vw] border-none border-t border-black opacity-100" />
         <div className="mb-0">
           <h1
@@ -101,52 +101,72 @@ export default function FlowArtDefaultDemo() {
         </div>
         <hr className="my-[2vw] border-none border-t border-black opacity-100" />
         <p className="mt-auto max-w-[50ch] text-[clamp(1rem,2.5vw,2rem)] font-normal leading-relaxed">UI/UX Designer · Graphic Designer · Developer</p>
-      </FlowSection>
+      </FlowSection> */}
 
-      <FlowSection aria-label="La mission" style={{ backgroundColor: '#000', color: '#fff' }}>
+      {/* <FlowSection aria-label="La mission" style={{ backgroundColor: '#000', color: '#fff' }}>
         <div className="flex flex-col gap-2 sm:gap-4 w-full h-full justify-start">
           <div className="flex items-center justify-between">
             <p className="text-xl font-bold uppercase tracking-[0.2em]">
               DEV/UI WORK
-            </p>
+            </p> */}
 
-            {/* <img
+      {/* <img
       src={charechter1.src}
       alt="character"
       className="w-10 h-10 sm:w-20 sm:h-20 md:w-28 md:h-24 object-contain"
     /> */}
-          </div>
+      {/* </div>
 
           <ProjectMainGridUse />
         </div>
-      </FlowSection>
+      </FlowSection> */}
 
 
-      <FlowSection aria-label="La mission" style={{ backgroundColor: '#000', color: '#fff' }}>
+      {/* <FlowSection aria-label="La mission" style={{ backgroundColor: '#000', color: '#fff' }}>
         <div className="flex flex-col gap-2 sm:gap-4 w-full h-full justify-start">
           <div className="flex items-center justify-between">
             <p className="text-xl font-bold uppercase tracking-[0.2em]">
               LOGO WORK
-            </p>
+            </p> */}
 
-            {/* <img
+      {/* <img
       src={charechter1.src}
       alt="character"
       className="w-10 h-10 sm:w-20 sm:h-20 md:w-28 md:h-24 object-contain"
     /> */}
-          </div>
+      {/* </div>
 
           <MasonryGridDemo />
         </div>
-      </FlowSection>
+      </FlowSection> */}
 
 
 
       <FlowSection aria-label="Présentation Flow Art" style={{ backgroundColor: '#F5F0E8', color: '#000' }}>
+        <img
+          src="./Assets/Hero/OnlyShoe.png"
+          alt="Shoe"
+          className="
+    absolute right-0
+    bottom-0
+    translate-y-0
+    w-[65%]
+    sm:w-[50%]
+    md:w-[45%]
+    lg:w-[40%]
+    h-auto
+    object-contain
+    object-right-bottom
+    max-w-none
+    max-sm:-translate-y-10
+  "
+        />
         <div className="flex items-center justify-between">
           <p className="text-xl font-bold uppercase tracking-[0.2em] text-[#fd5200]">
             Leaves a Mark
           </p>
+
+
 
           {/* <img
             src={charechter3.src}
@@ -154,6 +174,7 @@ export default function FlowArtDefaultDemo() {
             className="w-10 h-10 sm:w-20 sm:h-20 md:w-28 md:h-24 object-contain"
           /> */}
         </div>
+
         <hr className="my-[2vw] border-none border-t border-black/60" />
         <div>
           <h2
@@ -284,19 +305,20 @@ export default function FlowArtDefaultDemo() {
 
         <div className="flex items-center justify-between">
           <p className="text-xs font-bold uppercase tracking-[0.2em]">
-            05 — Conatct Me
+            UI/UX Engineer - Graphic Designer - Content Creator - Developer
           </p>
 
-          <img
+          {/* <img
             src={charechter.src}
             alt="character"
             className="w-10 h-10 sm:w-20 sm:h-20 md:w-28 md:h-24 object-contain"
-          />
+          /> */}
         </div>
         <hr className="my-[2vw] border-none border-t border-black/60" />
         <div>
+
           <h2
-            className="text-[clamp(3.5rem,12vw,14rem)] font-bold leading-[0.85] uppercase tracking-tight"
+            className="text-[clamp(2.5rem,8vw,10rem)] font-bold leading-[0.85] uppercase tracking-tight"
           >
             Turn
             <br />
